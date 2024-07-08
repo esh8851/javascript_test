@@ -1,1 +1,1 @@
-// alert("iseonho");
+alert("common.js");
