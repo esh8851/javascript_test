@@ -50,15 +50,15 @@
     }
 
     // return
-    var realResult = plus1(3,7);
+    // var realResult = plus1(3,7);
     // var realResult = minus1(13,7);
     // var realResult = multiply1(3,7);
     // var realResult = divide1(14,7);
 
-    alert(realResult);
+    // alert(realResult);
 
     function plus1 (num1, num2) {
-        let num1 = change(num1);
+        // let num1 = change(num1);
         let result = num1 + num2;
         return result;
     }
@@ -80,6 +80,22 @@
 
     function change (num) {
         return num - 10;
+    }
+
+    var number1 = 1;
+    var number2 = 3;
+    var realResult = comp(number1,number2);
+    print();
+
+    function comp (num1, num2) {
+        if(num1 > num2){
+            return num1;
+        } else {
+            return num2;
+        }
+    }
+    function print () {
+        alert(number1 + " 과 " + number2 + "중 큰 수는" + realResult + "입니다.");
     }
     
 </script>
