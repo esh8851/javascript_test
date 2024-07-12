@@ -82,22 +82,47 @@
         return num - 10;
     }
 
-    var number1 = 1;
-    var number2 = 3;
-    var realResult = comp(number1,number2);
-    print();
+    // 정수형 변수 두 개 선언
+    // 두 수를 비교하여 큰 수를 return
+    // 출력 "변수1과 변수2 중 큰 수는 ?입니다."
+    // 출력도 함수화 할 것
+    // var number1 = 1;
+    // var number2 = 3;
+    // var realResult = comp(number1,number2);
+    // print(number1, number2);
+    // function comp (num1, num2) {
+    //     if(num1 > num2){
+    //         return num1;
+    //     } else {
+    //         return num2;
+    //     }
+    // }
+    // function print (number1, number2) {
+    //     alert(number1 + " 과 " + number2 + "중 큰 수는 " + realResult + "입니다.");
+    // }
 
-    function comp (num1, num2) {
-        if(num1 > num2){
-            return num1;
+    // 정수형 변수1개 선언
+    // 짝수 인지 홀수 인지 판단하는 함수
+    // "? 수는 짝수/홀수 입니다." 출력 하는 함수
+    var number3 = 0;
+    var realResult = judge(number3);
+    print(number3, realResult);
+    function judge (num1) {
+        if(num1 % 2 == 0){
+            return "짝수";
         } else {
-            return num2;
+            return "홀수";
         }
     }
-    function print () {
-        alert(number1 + " 과 " + number2 + "중 큰 수는" + realResult + "입니다.");
+    function print (number3, realResult) {
+        if(number3 == 0){
+            alert("0은 그냥 0");
+        } else if (number3 < 0) {
+            alert("음수 넣지마");
+        } else {
+            alert(number3 + "은/는 " + realResult + " 입니다.");
+        }
     }
-    
 </script>
 </body>
 </html>
